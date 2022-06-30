@@ -1,0 +1,52 @@
+<div class="container titulo">
+    <h1 class="text-center m-5">
+        Listado de Empleados</h1>
+</div>
+<div class="table-responsive container">
+    <table class="table text-center table-bordered table-hover table-secondary">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of info; let i=index">
+                <th scope="row">{{element.id}}</th>
+                <td>{{element.nombre}}</td>
+                <td>{{element.apellido}}</td>
+                <td>{{element.sexo}}</td>
+                <td>{{element.email}}</td>
+                <td><img (click)="llevameQuieroEditar(element.id)" src="assets/img/pencil-square.svg" alt=""></td>
+                <td><img (click)="eliminarid=element.id; Adios();" [routerLink]="'/ver'" src="assets/img/trash.svg" alt=""></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div class="container text-center">
+        <button (click)="llevameQuieroCrear()" class="btn nuevoempleado m-2" type="submit">Nuevo Empleado</button>
+
+        <button (click)="QuieroIralHome()" class="btn botonsalida" type="submit">Salir</button>
+
+
+    </div>
+</div>
+
+<!--Visualizacion sin routing
+
+<hr class="m-5">
+<div>
+  <h1 class="text-center mt-5">Previsualizacion del formulario de crear</h1>
+  <app-crear></app-crear>
+</div>
+
+<hr class="m-5">
+<div>
+  <h1 class="text-center mt-5">Previsualizacion del formulario de edicion</h1>
+  <app-editar></app-editar>
+</div>-->

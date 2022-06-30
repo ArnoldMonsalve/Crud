@@ -1,0 +1,52 @@
+<div>
+    <h1 class="text-center m-5">Bienvenido a la seccion de Edicion!</h1>
+</div>
+<div class="container">
+    <form class="row g-3 needs-validation">
+        <!--
+        <div class="col-md-4">
+            <label for="text" class="form-label">Id</label>
+            <input [(ngModel)]="Empleado.id" type="text" class="form-control" id="id" name="id" required>
+        </div>-->
+        <div class="col-md-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" [(ngModel)]="Empleado.nombre" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su primer nombre" required>
+
+        </div>
+        <div class="col-md-4">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input type="text" [(ngModel)]="Empleado.apellido" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su primer apellido" required>
+
+        </div>
+        <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="email" [(ngModel)]="Empleado.email" class="form-control" id="email" name="email" placeholder="Ingrese su email personal" required>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <label for="sexo" class="form-label">Sexo</label>
+            <select class="form-select" [(ngModel)]="Empleado.sexo" id="sexo" name="sexo" required>
+            <option disabled selected [value]="''" >seleccione..</option>
+            <option [value]="'MASCULINO'">MASCULINO</option>
+            <option [value]="'FEMENINO'">FEMENINO</option>
+            <option [value]="'OTRO'">OTRO</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label for="cv" class="form-label">Hoja de Vida</label>
+            <input type="file" value="{{hoja}}" class="form" id="hoja" required>
+
+        </div>
+        <div class="col-12">
+            <button class="btn nuevoempleado m-2" (click)="TerminarEdicion()" type="submit">Terminar Edicion</button>
+
+            <button (click)="llevameQuieroRegresar()" class="btn botonsalida">
+              <img src="assets/img/backspace.svg" alt="">
+            </button>
+        </div>
+    </form>
+</div>

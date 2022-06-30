@@ -1,0 +1,28 @@
+.login {
+    justify-content: center;
+}
+
+img {
+    width: 85%;
+    height: 80%;
+    padding-left: 10px;
+}
+
+button {
+    background-color: #132D4A;
+    color: white;
+}
+
+h1 {
+    background-color: #5AA6B2;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

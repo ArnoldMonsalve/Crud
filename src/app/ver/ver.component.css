@@ -1,0 +1,58 @@
+h1 {
+    background-color: #5AA6B2;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img:hover {
+    cursor: pointer;
+    background-color: #5AA6B2;
+    border-radius: 10px;
+}
+
+th {
+    color: #132D4A;
+}
+
+.nuevoempleado {
+    background-color: #132D4A;
+    color: white;
+}
+
+.botonsalida {
+    background-color: #5AA6B2;
+}
+
+@media screen and (max-width: 350px) {
+    table {
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+}

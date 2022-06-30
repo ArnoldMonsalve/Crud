@@ -1,0 +1,27 @@
+.nuevoempleado {
+    background-color: #132D4A;
+    color: white;
+}
+
+.botonsalida {
+    background-color: #5AA6B2;
+}
+
+label {
+    color: #132D4A;
+}
+
+h1 {
+    background-color: #5AA6B2;
+    padding: 10px;
+    border-radius: 10px;
+    border: black solid;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
